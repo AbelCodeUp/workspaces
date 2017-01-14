@@ -25,7 +25,6 @@
 	margin-bottom: 20px;
 	background: #fff;
 	border-radius: 4px;
-	overflow: hidden;
 }
 .m-panel{
 	background: #fff;
@@ -34,7 +33,7 @@
 }
 .u-user-top-time{
 	
-	padding-top: 30px;
+	padding-top: 6px;
 	
 }
 .g-bg-fff{
@@ -124,7 +123,7 @@
 /* 左侧 */
 .m-bg-time-img{
 	height: 260px;
-	background: url('../images/left-time.png') no-repeat 100%;
+	background: url('/Portals/5/Skins/main/images/left-time.png') no-repeat 100%;
 }
 .left-time{
 	height: 133px;
@@ -209,7 +208,7 @@
 	width: 100%;
 	
 }
-.m-com-list-title{
+.m-com-list-title,.m-com-list-content{
 	margin-left: 235px;
 	position: relative;
 }
@@ -260,7 +259,7 @@
 .u-have-more{
 	position: absolute;	
 	right: 0;
-	top: 20px;
+	top: -46px;
 }
 .m-com-message{
 	margin-right: 415px;
@@ -293,7 +292,7 @@
 }
 .m-com-nav{
 	height: 170px;
-	background: url('../images/u-nav-bottom-bg.png') no-repeat 100%;
+	background: url('/Portals/5/Skins/main/images/u-nav-bottom-bg.png') no-repeat 100%;
 }
 .m-com-nav a{
 	font-size: 17px;
@@ -415,3 +414,20 @@
 	float: left;
 	margin-right: 2%;
 } */
+
+.C_InfoItem{
+	overflow: hidden;
+	margin-bottom: 9px;
+}
+.C_InfoItem a:hover{
+	text-decoration: none!important;
+	color: #ff7a64!important;
+}
+.tabdiy table td{
+	vertical-align: middle;
+	height: 30px;
+}
+.tabdiy table td span a:hover{
+	text-decoration: none!important;
+	color: #ff7a64!important;
+}

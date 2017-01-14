@@ -1,4 +1,4 @@
-﻿<link href="/Portals/5/Skins/main/template.css" rel="stylesheet" type="text/css" />
+<link href="/Portals/5/Skins/main/template.css" rel="stylesheet" type="text/css" />
 <link href="/Portals/5/Skins/main/main.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="/Portals/5/Skins/main/ygcanlder/canlander.css">
 <div class="g-header" id="ygtlheaderPane">
@@ -24,50 +24,13 @@
             	<div class="m-com-list g-fr">
             		<div class="m-com-list-title">
             			<ul>
-            				<li class="com-active">最新通知</li>
+            				<li class="com-active">部门公告</li>
             			</ul>
             			<div class="u-line"></div>
             		</div>
-            		<div class="m-com-list-content" id="oneContentPane" runat="server">
+            		<div class="m-com-list-content" id="ContentPane" runat="server">
             			
             		</div>		
-            	</div>
-        	</div>
-        	<div class="m-bg-panel m-com-tail m-panel g-fl" >
-        		<div class="m-left-icon g-fl">
-            		<img src="/Portals/5/Skins/main/images/m-icon-list.png" alt="">
-            	</div>
-            	<div class="m-com-list g-fr">
-					<div class="m-com-list-title">
-						<ul id="tablist">
-                            <li class="com-active" data-tab="m1"><a href="#1">公司通告</a></li>
-                            <li data-tab="m2"><a href="#2">销售/市场</a></li>
-                            <li data-tab="m3"><a href="#3">SA/教学</a></li>
-                            <li data-tab="m4"><a href="#4">系统公告</a></li>
-                            <li data-tab="m5"><a href="#5">人力/财务/行政</a></li>
-						</ul>
-						<div class="u-line"></div>
-					</div>
-                    <!-- Tabdiy panes -->
-                    <div class="m-two-tabbox">
-                        <div class="m-com-list-content tabdiy" id="ContentPane" runat="server" data-tab="m1" style="display: show;">
-                        
-                        </div>
-                        <div class="m-com-list-content tabdiy" id="tab2ContentPane" runat="server" data-tab="m2" style="display: none;">
-                        
-                        </div> 
-                        <div class="m-com-list-content tabdiy" id="tab3ContentPane" runat="server" data-tab="m3" style="display: none;">
-                        
-                        </div>   
-                        <div class="m-com-list-content tabdiy" id="tab4ContentPane" runat="server" data-tab="m4" style="display: none;">
-                        
-                        </div> 
-                        <div class="m-com-list-content tabdiy" id="tab5ContentPane" runat="server" data-tab="m5" style="display: none;">
-                        
-                        </div> 
-                    </div>
-                   
-                            			
             	</div>
         	</div>
         	<!-- 公司信息 -->
@@ -148,38 +111,3 @@
     </div>
 </div>
 <script src="/Portals/5/Skins/main/ygcanlder/calder.js"></script>
-<script>
-    (function($){
-        var hs = 'm'+location.hash.substring(1);
-        var tabbtn = $('#tablist li');
-        var tabdiy = $('.tabdiy');
-        if(location.hash){
-            $.each(tabdiy,function(i, n){
-                if($(n).data('tab') == hs){
-                    $(n).show()
-                }else{
-                    $(n).hide();
-                }
-            })
-            $.each(tabbtn,function(i, n){
-                if($(n).data('tab') == hs){
-                    $(n).addClass('com-active');
-                }else{
-                    $(n).removeClass('com-active');
-                }
-            })
-        }
-        
-        tabbtn.click(function(){
-            $(this).addClass('com-active').siblings().removeClass('com-active');
-            var _data = $(this).data('tab');
-            $.each(tabdiy,function(i, n){
-                if($(n).data('tab') == _data){
-                    $(n).show()
-                }else{
-                    $(n).hide();
-                }
-            })
-        })
-    })(jQuery)
-</script>

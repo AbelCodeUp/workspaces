@@ -10,10 +10,10 @@
 /* 三列中间自适应布局 */
 .g-ct{margin:20px;overflow:hidden;}
 .g-sd51,.g-sd52{position:relative;float:left;width:235px;margin:0 -235px 0 0;}
-.g-sd52{float:right;width:344px;margin:0 0 0 -344px;}
+.g-sd52{float:right;width:414px;margin:0 0 0 -414px;}
 .g-mn5{float:left;width:100%;}
-.g-mn5c{margin:0 364px 0 255px;}
+.g-mn5c{margin:0 433px 0 255px;}
 
 
 /* 预览辅助样式 */
-body{background: #ededed;}
+body{background: #ededed!important}

@@ -7,6 +7,8 @@
 	<link rel="stylesheet" href="template.css">
 	<link rel="stylesheet" href="../osCss/main.css">
 	<link rel="stylesheet" href="../common/reset.css">
+	<link rel="stylesheet" href="../ygcanlder/canlander.css">
+	<link rel="stylesheet" href="../osCss/carousel.css">
 </head>
 <body>
 	<div class="g-header">
@@ -151,24 +153,61 @@
 	        </div>
 	    </div>
 	    <div class="g-sd52">
-	        <!-- 工作提醒 -->
+	        <!-- 日历 -->
+	        <div class="m-bg-panel m-work-message">
+	        
+	        	<div class="m-work-content">
+					<!--[if IE]>
+					<style>
+					#cal #top{padding-top:4px}
+					#cal #top input{width:65px}
+					#cal #fd{width:170px}
+					</style>
+					<![endif]-->
+				      <div id="cal">
+				        <div id="top">公元&nbsp;
+				          <select>
+				          </select>
+				          &nbsp;年&nbsp;
+				          <select>
+				          </select>
+				          &nbsp;月&nbsp;&nbsp;&nbsp;&nbsp;农历<span></span>年&nbsp;[&nbsp;<span></span>年&nbsp;]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				          <input type="button" value="回到今天" title="点击后跳转回今天" style="padding:0px">
+				        </div>
+				        <ul id="wk">
+				          <li>一</li>
+				          <li>二</li>
+				          <li>三</li>
+				          <li>四</li>
+				          <li>五</li>
+				          <li><b>六</b></li>
+				          <li><b>日</b></li>
+				        </ul>
+				        <div id="cm"></div>
+				        <div id="bm"></div>
+				      </div>
+	        		</div>
+	        	</div>
+	        	<!-- 员工风采 -->
 	        <div class="m-bg-panel m-work-message">
 	        	<div class="m-work-mes-top">
-	        		工作提醒
+	        		员工风采
 	        	</div>
 	        	<div class="m-work-content">
-	        		<h4>目前总共有7位客户</h4>
-	        		<ul>
-		        		<li>今日有<span class="g-fc-red">42</span>位客户需要分配</li>
-		        		<li>今日有72位客户需要分配</li>
-		        		<li>今日有72位客户需要分配</li>
-		        		<li>今日有72位客户需要分配</li>
-		        		<li>今日有72位客户需要分配</li>
-		        	</ul>
+					<div class="u-carousel g-text-center">
+						<div class="u-car-img">
+							<img src="../images/people.png" alt="">
+						</div>
+						<p>1/12</p>
+						<p>人物描述</p>
+						<!-- 左右切换 -->
+						<a href="javscript:;" id="u-car-leftbtn"></a>
+						<a href="javscript:;" id="u-car-rightbtn"></a>
+					</div>
 	        	</div>
-	        	
 	        </div>
 	    </div>
 	</div>
+	<script src="../ygcanlder/calder.js"></script>
 </body>
 </html>

@@ -1,0 +1,15 @@
+.u-carousel{
+	position: relative;
+	height: 273px;
+}
+.u-car-img{
+	width: 180px;
+	height: 180px;
+	position: relative;
+	border-radius: 50%;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.u-car-img img{
+	height: 100%;
+}
